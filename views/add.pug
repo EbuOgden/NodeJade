@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        title Jade
+        meta(charset='utf-8')
+        meta(name='author', content='Ebubekir Ogden')
+        meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0, height=device-height, width=device-width')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    body
+      form(action='/api/genres', method='POST', onsubmit='submitted()')
+          input(type='text', name='name' id="name")
+          button(id="submit", type="submit") Add!
+      h5#reroute(style='display:none;') Rerouting...
+      script.
+            function submitted(){
+            $('#reroute').css('display', 'block');
+            }

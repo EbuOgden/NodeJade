@@ -1,7 +1,8 @@
 # NodeJade
-Node.js, Express.js, MongoDB, Jade( Pug ) 
 
-Node.js, Express.js, MongoDB and Jade Test
+Node.js, Express.js, MongoDB and Jade.js
+
+Tested : forEach, for, Server Side Rendering, RESTful API
 
 View Engine => Jade
 
